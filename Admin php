@@ -1,0 +1,44 @@
+
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="fid" value="<?= $data["id"]?>">
+        <input type="hidden" name="fFoto" value="<?= $data["foto"]?>">
+
+        <table>
+            <tr>
+                <td>fot0 id<label for="foto">Foto</label></td>
+                <td>judulfoto</td>
+                <td>tanggalunggahan <input type="file" name="fFoto" id="foto" /> </td>
+            </tr>
+            <tr>
+                <td>album<label for="judul">Judul</label></td>
+                <td>albumid</td>
+                <td>namaalbum <input type="text" name="fJudul" id="judul" value="<?= $data["judul"] ?>"/> </td>
+            </tr>
+            <tr>
+                <td>user<label for="deskripsi">Deskripsi</label></td>
+                <td>userid</td>
+                <td> 
+                    <textarea name="fDeskripsi" id="deskripsi" cols="30" rows="10" "><?= $data["deskripsi"]?>
+                    </textarea> 
+                </td>
+            </tr>
+            <tr>
+                <td>likefoto</td>
+                <td>likeid</td>
+                <td>fotoid<button type="submit" name="ubah">Ubah Data!</button></td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
